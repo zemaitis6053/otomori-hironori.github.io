@@ -1,0 +1,159 @@
+
+/* --------------------------- */
+/* kv
+/* --------------------------- */
+.kv-wrapper{
+  height: 500px;
+  position: relative;
+  background-image: url(../images/slovenia.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.kv-copy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.kv-name{
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.st-top > a,
+.nav-top > a,
+.kv-copy{
+  color:#fff;
+  text-shadow: #000 2px 2px 2px;
+}
+
+
+/* --------------------------- */
+/* works
+/* --------------------------- */
+.works-list{
+  flex-wrap: wrap;
+  margin-bottom: -50px;
+}
+.works-item{
+  width: 47.4%;
+  margin-bottom: 50px;
+}
+.works-img-wrapper{
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: .3s;
+  border: 2px solid #777;
+  width:360px;
+  height:224px;
+  display:flex;
+  align-items:center;
+}
+.works1-img > img{
+  margin:0 auto;
+  width:295px;
+}
+.works2-img > img{
+  margin:0 auto;
+  width:230px;
+}
+.works-item a{
+  display: block;
+}
+.works-item a img{
+  transition:  .3s;
+}
+.works-item a:hover{
+  opacity: .8;
+}
+.works-item a:hover img{
+  transform: scale(1.05,1.05);
+}
+.works-item a:hover .works-img-wrapper{
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,.08);
+}
+.works-title{
+  font-weight: bold;
+}
+.works-category{
+  display: block;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+/* --------------------------- */
+/* about
+/* --------------------------- */
+.about-lead{
+  margin-bottom: 50px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:768px){
+  /* header */
+  .st-top > a,
+  .nav-top > a{
+  color:#333;
+  text-shadow:none;
+}
+  /* --------------------------- */
+  /* kv
+  /* --------------------------- */
+  .kv-wrapper{
+    height: 62vh;
+    min-height: 280px;
+  }
+  .kv-message{
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+  /* --------------------------- */
+  /* works
+  /* --------------------------- */
+  .works-item{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width:476px){
+  .kv-name{
+    font-size:2.4rem;
+  }
+  /* section */
+  .section-title{
+    width:300px;
+    margin:0 auto 40px;
+    font-size:2.4rem;
+  }
+
+  /* works */
+  .works-img-wrapper{
+    width:300px;
+    height:186px;
+  }
+
+  .section-inner,
+  .works-list,
+  .works-item{
+    width:300px;
+  }
+
+  /* about me  */
+  .about-lead{
+    width:300px;
+    margin:0 auto 60px;
+  }
+
+}
+
+

@@ -1,0 +1,183 @@
+/* ----------------------------- */
+/* works-kv
+/* ---------------------------- */
+.overview-text,
+.works-info-list,
+.description-text,
+.description-list{
+  line-height: 1.8;
+}
+.description-list{
+  list-style: disc;
+  list-style-position: inside;
+}
+.page-title-wrapper.works-page{
+  padding-top: 52%;
+  height: 0;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-title.works-page{
+  font-size: 3rem;
+  bottom: 6.7%;
+  left: 7.1%;
+  text-align: left;
+}
+.page-title_jp{
+  text-align-last: left;
+}
+
+/* kv-bg */
+.invoice-bg{
+  background-size: 50px 20px;
+  background-image: url(../images/invoice/invoice-fv.png);
+}
+.gelateria-mako-bg{
+  background-image: url(../images/gelateria-mako/gelateria-mako-fv.png);
+}
+.light-lounge-bg{
+  background-image: url(../images/light-lounge/light-lounge-fv.png);
+}
+.raula-bg{
+  background-image: url(../images/raula/raula-fv.png);
+}
+.tech-junior-bg{
+  background-image: url(../images/tech-junior/tech-junior-fv.png);  
+}
+.tech-camp-bg{
+  background-image: url(../images/tech-camp/tech-camp-fv.png);  
+}
+
+/* kv-bg */
+.invoice-bg,
+.tech-camp-bg,
+.light-lounge-bg {
+  background-size: 50% 50%;
+}
+
+/* ----------------------------- */
+/* section
+/* ---------------------------- */
+.works-section-title{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  display:flex;
+  position:relative;
+  /* justify-content:bottom; */
+}
+.wc-title{
+  padding:0 10px;
+}
+.works-section-title_en{
+  font-size: 1.2rem;
+  color: #777;
+  display:inline-block;
+  position:absolute;
+  top:8px;
+  left:65px;
+  /* flex-direction:row; */
+}
+.works-section-title::before{
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 6px;
+  background-color: #333;
+  vertical-align: -3px;
+}
+.site-text:hover,
+.works-info-item > a:hover{
+  color:blue;
+}
+
+/* ----------------------------- */
+/* overview
+/* ---------------------------- */
+.overview-text{
+  margin-bottom: 20px;
+}
+.works-info-list {
+  padding: 24px;
+  background-color: #f0f0f0;
+}
+.img-bg{
+  background-color: #fff;
+}
+
+/* ----------------------------- */
+/* process
+/* ---------------------------- */
+.process-img-wrapper{
+  margin-bottom: 50px;
+}
+.process-title{
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 50px 0 20px;
+}
+.process-title::after{
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #333;
+  margin-top: 6px;
+}
+.process-subheading{
+  margin: 50px 0 -10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.description-img-wrapper,
+.description-text{
+  margin: 20px 0;
+}
+
+/* リンクボタン */
+.link-btn{
+  margin-top: 100px;
+}
+.link-btn::after{
+  content: "";
+}
+.link-btn::before{
+  content: "<";
+  position: absolute;
+  left: 30px;
+  transition: .3s;
+}
+.link-btn:hover::before{
+  transform: translateX(-6px);
+  transition: .3s;
+}
+
+@media screen and (max-width:768px){
+  .page-title-wrapper.works-page{
+    padding-top: 75%;
+    background-size:70%;
+    padding-bottom:50px;
+  }
+  .page-title.works-page{
+    bottom: 5%;
+    left: 5%;
+  }
+
+  /* 提案資料 */
+  iframe{
+    height:300px;
+  }
+}
+
+@media screen and (max-width:476px){
+  .page-title-wrapper{
+    padding-bottom:30px;
+  }
+  .wc-title{
+    padding:0 5px;
+  }
+  .works-section-title_en{
+    vertical-align:text-bottom;
+  }
+}
